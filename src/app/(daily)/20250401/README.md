@@ -3,3 +3,4 @@
 - input タグ
   value を使うと制御されていないコンポーネント（Uncontrolled Component）担ってしまうので
   state で切り替える必要がある(onChange)
+  defaultValue だと可能
