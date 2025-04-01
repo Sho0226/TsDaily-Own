@@ -1,6 +1,7 @@
 interface UserRegisterationDialogProps {
   isOpen: boolean;
   userName: string;
+  text: string;
   onConfirm: () => void;
   onCancel: () => void;
 }
@@ -10,6 +11,7 @@ export function UserRegistrationDialog({
   userName,
   onConfirm,
   onCancel,
+  text,
 }: UserRegisterationDialogProps) {
   if (!isOpen) return null;
 
@@ -20,6 +22,7 @@ export function UserRegistrationDialog({
       <input type="text" value={userName} readOnly />
       <button onClick={onConfirm}>Confirm</button>
       <button onClick={onCancel}>Cancel</button>
+      <input type="text" defaultValue={text} style={{ color: "red" }} />
     </div>
   );
 }

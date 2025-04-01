@@ -1,4 +1,5 @@
 # Daily Note for 20250401
-- [ ] 今日のTODO
-- [ ] 今日の学習内容
-- [ ] 今日の振り返り
+
+- input タグ
+  value を使うと制御されていないコンポーネント（Uncontrolled Component）担ってしまうので
+  state で切り替える必要がある(onChange)

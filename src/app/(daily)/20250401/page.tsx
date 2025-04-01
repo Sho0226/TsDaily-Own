@@ -11,8 +11,9 @@ export default function Page() {
         <UserRegistrationDialog
           isOpen={true}
           userName="Sho"
-          onConfirm={() => console.log("Confirmed")}
-          onCancel={() => console.log("Cancelled")}
+          onConfirm={() => alert("Confirmed")}
+          onCancel={() => alert("Cancelled")}
+          text="This is my daily"
         />
       </div>
     </div>
