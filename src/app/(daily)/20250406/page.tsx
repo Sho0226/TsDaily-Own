@@ -5,7 +5,7 @@ import styles from "./page.module.css";
 export default function Page() {
   const [count, dispatch] = useReducer(reducer, 0);
 
-  function reducer(state, action) {
+  function reducer(state: number, action: { type: string }) {
     switch (action.type) {
       case "increment":
         return state + 1;
