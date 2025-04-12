@@ -1,5 +1,3 @@
-import styles from "./page.module.css";
-      
-export default function Page() { 
-  return <div className={styles.daily}>Daily Note for 20250412</div>; 
+export default function Page() {
+  return <h1 className="text-3xl font-bold underline">Hello world!</h1>;
 }
